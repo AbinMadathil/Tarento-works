@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1 class="page-heading" data-text="WORLD OF BOOKS"></h1>
+    
+    <div id="iconContainer">
+      <a href="index.html">
+        <img id="homeIcon" src="icon.png" alt="Home">
+      </a>
+    </div>
+    <div class="search-container" id="searchContainer">
+      <input id="input" placeholder="Enter a book title">
+      <button onclick="getbooks()">Get Books!!</button>
+    </div>
+    <div id="output" class="tile-container"></div>
+
+    <!-- Loading overlay -->
+    <div class="overlay" id="loadingOverlay">
+      <div class="loading-spinner"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

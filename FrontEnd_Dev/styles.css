@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: transparent; /* Make the container transparent */
+  text-align: center;
+}
+
+
+.page-heading {
+  display: inline-block;
+  margin-top: 10px; /* Add some top margin for the heading */
+  font-size: 48px; /* Adjust the font size as needed */
+  font-family: "Arial", sans-serif; /* Change the font family */
+  color: grey; /* Change the text color to teal (#008080) */
+  text-transform: uppercase; /* Convert the text to uppercase */
+  letter-spacing: 2px; /* Add some letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+  
+}
+
+
+
+/*---------loading page styles------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none; /* Hide the overlay by default */
+}
+
+.loading-spinner {
+  border: 4px solid rgba(128, 128, 128, 0.3);
+  border-top: 4px solid gray; /* Grey color for the loading spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-----------------------------*/
+
+header {
+  position: relative;
+  background-color: transparent/* rgba(255, 255, 255, 0.8)*/;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+  margin-top: -10px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+
+#input {
+  padding: 10px;
+  font-size: 16px;
+  width: 400px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-color: white; /* Transparent input field */
+  border: none;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+}
+
+#iconContainer {
+  position: absolute; /* Add absolute positioning to the icon container */
+  top: 20px; /* Position from the top */
+  right: 40px; /* Position from the right */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+}
+
+/* Add styles for the custom icon */
+#homeIcon {
+  width: 32px; /* Set the width of the icon */
+  height: 32px; /* Set the height of the icon */
+}
+
+
+.book {
+  
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+
+
+/* ... (other styles) ... */
+
+/* Custom styles for the button */
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #ff5722; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* On hover, change the background color */
+button:hover {
+  background-color: #f44336;
+}
+
+/* On click, change the background color */
+button:active {
+  background-color: #e53935;
+}
+
+
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px); /* Set each tile to be 250px wide */
+  gap: 20px; /* Add gap between tiles */
+  justify-content: center; /* Horizontally center the tiles within the container */
+}
+
+
